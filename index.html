@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>اردوی مدرسه صدرا</title>
+  <meta name="description" content="صفحه ثبت‌نام اردوی مدرسه صدرا">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --ink: #17212f;
+      --muted: #788392;
+      --line: #e8ebef;
+      --surface: #ffffff;
+      --background: #f7f8fa;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--ink);
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+    }
+
+    .page {
+      width: min(100% - 40px, 920px);
+      margin: 0 auto;
+      padding: 28px 0 24px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 2px 26px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -.2px;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: #172b43;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    .top-label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      background: var(--surface);
+      animation: appear .55s ease both;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #6e7d8e;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(29px, 5vw, 45px);
+      line-height: 1.5;
+      font-weight: 800;
+      letter-spacing: -.8px;
+    }
+
+    .description {
+      max-width: 510px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .rule {
+      width: 48px;
+      height: 3px;
+      margin-top: 25px;
+      border-radius: 10px;
+      background: #243e5c;
+    }
+
+    .form-note {
+      margin-top: 18px;
+      padding: 17px 20px;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      background: #fff;
+      color: #657181;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    footer {
+      padding: 22px 4px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 11px;
+    }
+
+    footer strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    /* گوشه‌های گرد برای قاب فرم تمام‌صفحه */
+    #S4Lpku8Q {
+      border-radius: 22px;
+      overflow: hidden;
+      background: #fff;
+      position: relative;
+    }
+
+    #S4Lpku8Q iframe {
+      border-radius: 22px !important;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .page { width: min(100% - 24px, 920px); padding-top: 14px; }
+      .top { padding-bottom: 17px; }
+      .hero { border-radius: 20px; padding: 29px 22px; }
+      .form-note { border-radius: 14px; padding: 14px 16px; }
+      #S4Lpku8Q, #S4Lpku8Q iframe { border-radius: 18px !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="brand">
+        <span class="mark">ص</span>
+        <span>مدرسه صدرا</span>
+      </div>
+      <span class="top-label">سامانه ثبت‌نام اردو</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">ویژه دانش‌آموزان مدرسه صدرا</p>
+        <h1>اردوی مدرسه صدرا</h1>
+        <p class="description">
+          برای ثبت‌نام در اردو، فرم مربوطه را تکمیل کنید.
+          لطفاً اطلاعات خود را با دقت وارد کنید.
+        </p>
+        <div class="rule"></div>
+      </section>
+
+      <div class="form-note">
+        فرم ثبت‌نام در این صفحه بارگذاری می‌شود. برای ارسال اطلاعات،
+        مراحل نمایش‌داده‌شده در فرم را دنبال کنید.
+      </div>
+    </main>
+
+    <footer>
+      طراحی و توسعه <strong>امیر صادق زاهدی</strong>
+    </footer>
+  </div>
+
+  <div id="S4Lpku8Q" style="min-height: 480px; position: relative;">
+    <div id="porsline-loading-S4Lpku8Q" style="position: absolute; top: 50%; left: 50%; width: 35px; height: 35px; border: 4px solid rgba(0, 0, 0, 0.1); border-top: 4px solid #555; border-radius: 50%; animation: spin-S4Lpku8Q 1s linear infinite;"></div>
+    <script>
+      const styleSheet = document.createElement('style');
+      styleSheet.innerHTML = `@keyframes spin-S4Lpku8Q {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }`;
+      document.head.appendChild(styleSheet);
+      const loadingIndicator = document.getElementById('porsline-loading-S4Lpku8Q');
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.fetchPriority = 'high';
+      script.onload = function() {
+        loadingIndicator.style.display = 'none';
+      };
+      script.src = 'https://survey.porsline.ir/embed/eyJ3aWR0aCI6IjEwMCUiLCJoZWlnaHQiOiIxMDAlIiwiYm9yZGVyIjoibm9uZSJ9/S4Lpku8Q';
+      document.getElementById('S4Lpku8Q').appendChild(script);
+    </script>
+  </div>
+</body>
+</html>
